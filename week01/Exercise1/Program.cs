@@ -10,7 +10,7 @@ class Program
         Console.Write("What is your last name? ");
         string lastName = Console.ReadLine();
 
-        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}.");
+        Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}");
 
 
     }
@@ -18,7 +18,6 @@ class Program
 
 
 /*
-
 Perguntar
 ↓
 Guardar resposta
@@ -28,11 +27,4 @@ Perguntar
 Guardar resposta
 ↓
 Mostrar resultado
-
------------------------------------
-What is your first name? Ana
-What is your last name? Hilamatu
-
-Your name is Hilamatu, Ana Hilamatu. - "Your name is last-name, first-name, last-name" 
-------------------------------------
 */
