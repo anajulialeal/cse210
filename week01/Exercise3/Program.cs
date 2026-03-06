@@ -34,7 +34,7 @@ class Program
                 }
             }
 
-            Console.WriteLine($"You guessed it in {guesses} guesses!");
+            Console.WriteLine($"You guessed it in {guesses} attempts!");
 
             Console.Write("Do you want to play again? ");
             playAgain = Console.ReadLine();
