@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+
         Journal journal = new Journal();
         PromptGenerator promptGenerator = new PromptGenerator();
 
@@ -28,6 +29,10 @@ class Program
                 Console.WriteLine(prompt);
                 Console.Write("> ");
                 string response = Console.ReadLine();
+
+                // Count the number of words in the response
+                int wordCount = response.Split(" ").Length;
+                Console.WriteLine($"You wrote {wordCount} words.");
 
                 Entry entry = new Entry();
                 entry._date = DateTime.Now.ToShortDateString();
