@@ -1,3 +1,8 @@
+// EXCEEDING REQUIREMENTS:
+// The program was improved by using a random number of words to hide each time the user presses Enter.
+// Instead of always hiding the same number of words, it now hides between 2 and 4 words randomly.
+// This makes the memorization process more dynamic and a little more challenging.
+// Additionally, the program avoids hiding words that are already hidden, improving efficiency.
 using System;
 
 class Program
@@ -29,7 +34,9 @@ class Program
                 break;
             }
 
-            scripture.HideRandomWords(3);
+           Random rand = new Random();
+            int wordsToHide = rand.Next(2, 5);
+            scripture.HideRandomWords(wordsToHide);
         }
     }
 }
